@@ -1,23 +1,32 @@
-import logo from './logo.svg';
 import './App.css';
+import Header from './Components/Header/index';
+import { DataProvider } from  './Components/Context';
+import { Routes, Route } from 'react-router-dom';
+import Admin from './Components/Admin';
+import Layout from './Components/Layout';
+import Profile from './Components/Profile';
+import Dashboard from './Components/Dashboard';
+import Edit from './Components/Edit';
 
 function App() {
+
+ 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <DataProvider> 
+      <Header />
+      
+      <Routes>
+        <Route path="/" element={ <Admin /> } ></Route>
+        <Route path="/dashboard" element={ <Dashboard /> } ></Route>
+        <Route path="/layout/:category" element={ <Layout /> } ></Route>
+        <Route path="/profile/:id" element={ <Profile /> } ></Route>
+        <Route path="/edit/:id" element={ <Edit /> } ></Route>
+      </Routes>
+
+    </DataProvider>
+
     </div>
   );
 }

@@ -1,0 +1,9 @@
+.navbar{
+    min-height: 10vh !important ; 
+    background-color: rgb(245, 131, 83);
+  
+}
+.navbar-brand:hover{
+     border: 2px solid white !important ;
+     box-shadow: 2px 2px rgb(217, 213, 213);
+}

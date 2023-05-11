@@ -1,0 +1,10 @@
+.dashWrap{
+    width: 100%;
+    height: 90vh !important;
+    overflow-y: auto;
+   
+    background-image: linear-gradient(to bottom right, rgb(168, 212, 173),rgb(242, 247, 158), rgb(232, 236, 103));
+}
+.dashWrap  button:hover{
+    background-color: #00072d;
+}

@@ -1,0 +1,5 @@
+.edit {
+    height: 80vh;
+    overflow-y: auto;
+    /* background-image: linear-gradient(to bottom right, rgb(239, 233, 231),rgb(218, 224, 242), rgb(249, 207, 242)); */
+}

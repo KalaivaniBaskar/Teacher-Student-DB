@@ -1,0 +1,20 @@
+.profile{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: center;
+}
+.pCard{  
+        width: 100%; 
+        min-width: 10rem;
+        background-image: linear-gradient(to bottom right, rgb(239, 233, 231),rgb(218, 224, 242), rgb(249, 207, 242));
+        box-shadow: 2px 2px 3px gray;
+    }
+.pCard .table{
+    font-style: italic !important;
+    border: 1px solid;
+}
+.pCard > p{
+        margin: 0;
+    }
